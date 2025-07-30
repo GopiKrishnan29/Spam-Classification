@@ -38,3 +38,26 @@ It may not detect subtle or modern spam variations.
 
 ## 🗂 Folder Structure
 
+Spam-Classifier-App/
+│
+├── app/
+│ ├── utils.py # Theme & result display
+│ └── config.py # Theme & path settings
+│
+├── model/
+│ ├── train_model.py # Model training and saving
+│ ├── spam_nb.pkl # Trained Naive Bayes model
+│ └── spam_rf.pkl # Trained Random Forest model
+│
+├── preprocess/
+│ └── text_cleaner.py # Text preprocessing logic
+│
+├── vectorizer/
+│ └── tfidf.pkl # TF-IDF vectorizer
+│
+├── data/
+│ └── SMSSpamCollection # Original dataset file
+│
+├── streamlit_app.py # Entry point for Streamlit app
+├── requirements.txt # Python dependencies
+└── README.md # You're here!
