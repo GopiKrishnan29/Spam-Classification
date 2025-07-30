@@ -38,26 +38,4 @@ It may not detect subtle or modern spam variations.
 
 ## 🗂 Folder Structure
 
-Spam-Classifier-App/
-│
-├── app/
-│ ├── utils.py # Theme & result display
-│ └── config.py # Theme & path settings
-│
-├── model/
-│ ├── train_model.py # Model training and saving
-│ ├── spam_nb.pkl # Trained Naive Bayes model
-│ └── spam_rf.pkl # Trained Random Forest model
-│
-├── preprocess/
-│ └── text_cleaner.py # Text preprocessing logic
-│
-├── vectorizer/
-│ └── tfidf.pkl # TF-IDF vectorizer
-│
-├── data/
-│ └── SMSSpamCollection # Original dataset file
-│
-├── streamlit_app.py # Entry point for Streamlit app
-├── requirements.txt # Python dependencies
-└── README.md # You're here!
+<pre> Spam-Classifier-App/ │ ├── <b>app/</b> # Streamlit app logic │ ├── __init__.py │ ├── config.py # Theme colors and model paths │ └── utils.py # Theme styler and result displayer │ ├── <b>model/</b> # Model training and saved models │ ├── __init__.py │ ├── train_model.py # Train and save NB + RF │ ├── spam_nb.pkl # Naive Bayes model │ └── spam_rf.pkl # Random Forest model │ ├── <b>preprocess/</b> # Text cleaning logic │ ├── __init__.py │ └── text_cleaner.py # clean_text() function used before predict │ ├── <b>vectorizer/</b> # Vectorization for feature extraction │ ├── __init__.py │ └── tfidf.pkl # TF-IDF vectorizer used by both models │ ├── <b>data/</b> # Dataset directory │ └── SMSSpamCollection # UCI dataset (original file) │ ├── <b>streamlit_app.py</b> # Entry point to launch the app ├── <b>requirements.txt</b> # All dependencies (streamlit, sklearn, etc.) └── <b>README.md</b> # Project documentation (this file) </pre>
